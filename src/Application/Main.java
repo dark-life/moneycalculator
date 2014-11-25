@@ -1,11 +1,16 @@
 package Application;
 
+import Control.ExchangeOperation;
+import Persistance.CurrencySetLoader;
+
 
 
 public class Main {
 
     public static void main(String[] args) {
-        // TODO code application logic here
+        CurrencySetLoader currencySetLoader = new CurrencySetLoader();
+        currencySetLoader.load();
+        new ExchangeOperation().execute();
     }
     
 }
