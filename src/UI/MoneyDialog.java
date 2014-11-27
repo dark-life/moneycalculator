@@ -3,7 +3,7 @@ package UI;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-class MoneyDialog extends JPanel {
+public class MoneyDialog extends JPanel {
 
     public MoneyDialog() {
         super();

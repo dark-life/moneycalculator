@@ -3,7 +3,7 @@ package UI;
 import javax.swing.JComboBox;
 import javax.swing.JPanel;
 
-class CurrencyDialog extends JPanel {
+public class CurrencyDialog extends JPanel {
 
         public CurrencyDialog() {
         super();

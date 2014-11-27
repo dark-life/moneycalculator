@@ -9,8 +9,12 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-class MoneyCalculatorFrame extends JFrame{
+public class MoneyCalculatorFrame extends JFrame{
 
+    public JButton buttonCalculate;
+    public JButton buttonClose;
+    
+    
     public MoneyCalculatorFrame() {
         setTitle("Money Calculator");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -41,27 +45,27 @@ class MoneyCalculatorFrame extends JFrame{
     }
 
     private JButton createCalculateButton() {
-        JButton button = new JButton("Calculate");
-        button.addActionListener(new ActionListener() {
+        buttonCalculate = new JButton("Calculate");
+        buttonCalculate.addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.out.println("Calculating...");
             }
         });
-        return button;
+        return buttonCalculate;
     }
 
     private JButton createCloseButton() {
-        JButton button = new JButton("Close");
-        button.addActionListener(new ActionListener() {
+        buttonClose = new JButton("Close");
+        buttonClose.addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
                 MoneyCalculatorFrame.this.dispose();
             }
         });
-        return button;
+        return buttonClose;
     }
 
     
