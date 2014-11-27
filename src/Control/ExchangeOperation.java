@@ -9,6 +9,7 @@ import Persistance.ExchangeRateLoader;
 import Process.Exchanger;
 import UI.ExchangeDialog;
 import UI.MoneyDisplay;
+import java.util.Scanner;
 
 
 public class ExchangeOperation {
