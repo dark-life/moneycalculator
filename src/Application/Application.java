@@ -1,7 +1,7 @@
 package Application;
 
-import Control.ExchangeOperation;
 import Persistance.CurrencySetLoader;
+import SWING.ApplicationFrame;
 import UI.MoneyCalculatorFrame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -9,21 +9,23 @@ import java.awt.event.ActionListener;
 
 
 
-public class Main {
+public class Application {
 
     public static void main(String[] args) {
         CurrencySetLoader currencySetLoader = new CurrencySetLoader();
         currencySetLoader.load();
         MoneyCalculatorFrame moneyCalculatorFrame = new MoneyCalculatorFrame();
-        moneyCalculatorFrame.buttonCalculate.addActionListener(new ActionListener(){
+        ApplicationFrame frame = new ApplicationFrame();
+        frame.register (new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                new ExchangeOperation().execute();
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
             }
-            
-            
-        });
+        }){
+        
+     }
+
         
     }
     

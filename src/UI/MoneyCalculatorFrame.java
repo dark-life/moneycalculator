@@ -11,8 +11,7 @@ import javax.swing.JPanel;
 
 public class MoneyCalculatorFrame extends JFrame{
 
-    public JButton buttonCalculate;
-    public JButton buttonClose;
+
     
     
     public MoneyCalculatorFrame() {
@@ -21,8 +20,6 @@ public class MoneyCalculatorFrame extends JFrame{
         setMinimumSize(new Dimension(300, 300));
         createComponents();
         setVisible(true);
-        
-        
     }
 
     private void createComponents() {
@@ -45,7 +42,7 @@ public class MoneyCalculatorFrame extends JFrame{
     }
 
     private JButton createCalculateButton() {
-        buttonCalculate = new JButton("Calculate");
+        JButton buttonCalculate = new JButton("Calculate");
         buttonCalculate.addActionListener(new ActionListener() {
 
             @Override
@@ -57,7 +54,7 @@ public class MoneyCalculatorFrame extends JFrame{
     }
 
     private JButton createCloseButton() {
-        buttonClose = new JButton("Close");
+        JButton buttonClose = new JButton("Close");
         buttonClose.addActionListener(new ActionListener() {
 
             @Override
